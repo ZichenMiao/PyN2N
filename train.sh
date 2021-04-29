@@ -1,0 +1,12 @@
+python train.py \
+--train_data data/train_imgnet_val \
+--val_data data/valid \
+--work_dir checkpoints \
+--train_size 50000 \
+--val_size 40 \
+--epoches 120 \
+--loss l2 \
+--noise_type gaussian \
+--noise_param 25 \
+--crop_size 256 \
+--gpu $1
